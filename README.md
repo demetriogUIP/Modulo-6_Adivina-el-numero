@@ -1,9 +1,14 @@
-## Modulo-6_Adivina-el-numero
-"Ejercicio, adivinar el numero"
+# Modulo-6_Adivina-el-numero
 
-## Adivina el Número – Versión Inicial
+Este proyecto desarrolla un juego interactivo de adivinanza de números en Python.
 
-Este proyecto es un juego simple donde el jugador intenta adivinar un número secreto generado aleatoriamente por el programa.
+---
+
+## 💡 Breve Resumen del Proyecto
+
+El proyecto es un juego de adivinanza que genera un número secreto entre 1 y 20. El jugador dispone de **5 intentos** para adivinarlo. La aplicación ofrece pistas ("mayor" o "menor") y cuenta con validación robusta para asegurar que solo se acepten números dentro del rango permitido, **sin consumir intentos** en caso de errores de entrada.
+
+---
 
 ## Funcionalidad desarrollada por Demetrio
 
@@ -13,4 +18,32 @@ Este proyecto es un juego simple donde el jugador intenta adivinar un número se
 - Mensajes indicando si el número secreto es mayor o menor.
 - Finalización del juego cuando el usuario acierta.
 
-Esta es la base sobre la cual los demás integrantes extenderán el proyecto (límite de intentos, niveles de dificultad, repetir juego, etc.).
+Esta es la base sobre la cual los demás integrantes extenderán el proyecto (niveles de dificultad, repetir juego, etc.).
+
+---
+
+## Funcionalidad desarrollada por Yohel
+
+* Límite de Intentos: Se limitó el juego a un máximo de 5 intentos por partida.
+* Gestión de Fin de Juego: Se implementó la estructura `for` para gestionar la condición de victoria (`break`) y la condición de derrota (fin del bucle).
+* Validación de Entrada: Se mejoró el manejo de errores (`try/except`) para:
+    * Asegurar que la entrada sea un número entero válido.
+    * Validar que el número se encuentre estrictamente entre 1 y 20. Es decir que solo aplica para la dificultad basica. Los demas companeros deben agregar las otras dificultades con las respectivas validaciones
+    * Garantizar que las entradas inválidas (letras o números fuera de rango) no gasten uno de los 5 intentos.
+
+---
+
+## Forma de Uso (Experiencia del Jugador)
+
+Para jugar, sigue estos pasos:
+
+1.  El programa iniciará generando un número secreto al azar entre 1 y 20.
+2.  Tendrás un total de **5 intentos** para adivinar el número.
+3.  En cada turno, el programa te indicará cuál es tu intento actual.
+4.  Ingresa tu número:
+    * Si el número es correcto, ¡ganas!
+    * Si es incorrecto, el programa te dirá si el número secreto es MAYOR o MENOR que tu suposición.
+    * Si ingresas letras o un número fuera del rango 1-20, el programa te pedirá que vuelvas a intentarlo sin perder un intento.
+5.  Si agotas tus 5 intentos, el programa mostrara el número secreto.
+
+Esta es la base sobre la cual los demás integrantes extenderán el proyecto ( niveles de dificultad, repetir juego, etc.).
