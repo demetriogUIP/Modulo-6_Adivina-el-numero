@@ -33,8 +33,6 @@ Esta es la base sobre la cual los demás integrantes extenderán el proyecto (ni
 
 ---
 
----
-
 ## Funcionalidad desarrollada por John Roa
 
 Se implementó el sistema de **niveles de dificultad**, permitiendo que el jugador configure el rango del número secreto antes de iniciar la partida. Se añadieron tres niveles:
