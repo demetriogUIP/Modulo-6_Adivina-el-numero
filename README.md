@@ -33,8 +33,6 @@ Esta es la base sobre la cual los demás integrantes extenderán el proyecto (ni
 
 ---
 
-Perfecto John, aquí tienes una versión **intermedia**: más larga que la corta, pero sin ser tan extensa como la anterior. Ideal para README académico.
-
 ---
 
 ## Funcionalidad desarrollada por John Roa
