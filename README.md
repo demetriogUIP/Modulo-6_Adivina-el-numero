@@ -33,6 +33,28 @@ Esta es la base sobre la cual los demás integrantes extenderán el proyecto (ni
 
 ---
 
+Perfecto John, aquí tienes una versión **intermedia**: más larga que la corta, pero sin ser tan extensa como la anterior. Ideal para README académico.
+
+---
+
+## Funcionalidad desarrollada por John Roa
+
+Se implementó el sistema de **niveles de dificultad**, permitiendo que el jugador configure el rango del número secreto antes de iniciar la partida. Se añadieron tres niveles:
+
+* **Fácil:** números del 1 al 10
+* **Medio:** números del 1 al 20
+* **Difícil:** números del 1 al 50
+
+Para esto se creó la función `seleccionar_dificultad()`, la cual muestra el menú, valida la opción elegida y retorna el rango correspondiente. Este rango se utiliza para generar el número secreto dinámicamente mediante:
+
+```python
+numero_secreto = random.randint(MINIMO, MAXIMO)
+```
+
+Con esta mejora, el juego se vuelve más flexible y ofrece una experiencia ajustada al nivel que el jugador prefiera.
+
+---
+
 ## Forma de Uso (Experiencia del Jugador)
 
 Para jugar, sigue estos pasos:
