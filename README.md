@@ -51,6 +51,13 @@ Con esta mejora, el juego se vuelve más flexible y ofrece una experiencia ajust
 
 ---
 
+## Funcionalidad desarrollada por Jonathan Vergara
+Se implemento limpieza de codigo y modularizacion del sistema
+
+esto para incremantar la legibilidad del codigo entre desarrolladores, respetando principios SOLID
+
+---
+
 ## Forma de Uso (Experiencia del Jugador)
 
 Para jugar, sigue estos pasos:
