@@ -1,34 +1,34 @@
 import random
 
-print("=== ADIVINA EL NUMERO (Version con limite de intentos y validaciones) ===")
+print("=== ADIVINA EL NÚMERO (Versión con límite de intentos y validaciones) ===")
 
 # ================================
 # INTEGRANTE 3 – NIVELES DE DIFICULTAD (John)
 # ================================
 def seleccionar_dificultad():
     print("\nSelecciona un nivel de dificultad:")
-    print("1. Facil   (1 - 10)")
+    print("1. Fácil   (1 - 10)")
     print("2. Medio   (1 - 20)")
-    print("3. Dificil (1 - 50)")
+    print("3. Difícil (1 - 50)")
 
     while True:
         opcion = input("Elige 1, 2 o 3: ")
 
         if opcion == "1":
-            return 1, 10, "Facil"
+            return 1, 10, "Fácil"
         elif opcion == "2":
             return 1, 20, "Media"
         elif opcion == "3":
-            return 1, 50, "Dificil"
+            return 1, 50, "Difícil"
         else:
-            print("❌ Opcion invalida. Intenta nuevamente.")
+            print("❌ Opción inválida. Intenta nuevamente.")
 
 def partida_juego():
 
     # Obtenemos el rango según la dificultad elegida
     MINIMO, MAXIMO, nombre_dificultad = seleccionar_dificultad()
     print(f"\nHas elegido dificultad: {nombre_dificultad}.")
-    print(f"Piensa en un numero entre {MINIMO} y {MAXIMO}.\n")
+    print(f"Piensa en un número entre {MINIMO} y {MAXIMO}.\n")
     # ================================
 
     # Genera número secreto entre 1 y 20 (dificultad básica → ahora según dificultad)
@@ -47,30 +47,30 @@ def partida_juego():
         while True:
             try:
                 # antes: "Ingresa un número entre 1 y 20"
-                numero = int(input(f"Ingrese un numero entre {MINIMO} y {MAXIMO}: "))
+                numero = int(input(f"Ingrese un número entre {MINIMO} y {MAXIMO}: "))
             except ValueError:
-                print("Entrada invalida. Por favor ingresa un numero.")
+                print("Entrada inválida. Por favor ingresa un número.")
                 continue
 
             # agrego otra validación más que solo aplica para la dificultad básica
             # antes: if numero < 1 or numero > 20:
             if numero < MINIMO or numero > MAXIMO:
-                print("El numero ingresado esta fuera de la dificultad seleccionada")
+                print("El número ingresado está fuera de la dificultad seleccionada")
                 continue
 
             # Sale del bucle 'while True' al obtener una entrada válida y en rango
             break
 
         if numero < numero_secreto:
-            print("El numero secreto es MAYOR.")
+            print("El número secreto es MAYOR.")
         elif numero > numero_secreto:
-            print("El numero secreto es MENOR.")
+            print("El número secreto es MENOR.")
         else:
-            print("¡Correcto! Adivinaste el numero.")
+            print("¡Correcto! Adivinaste el número.")
             # adivinado = True  # Esta variable ya no existe y no es necesaria
             # Rompe el bucle 'for' al adivinar
             break
 
     # Este es el 'else' del bucle 'for', se ejecuta si el 'for' termina sin un 'break'
     else:
-        print(f"\nSe acabaron los intentos. El numero secreto era: {numero_secreto}")
+        print(f"\nSe acabaron los intentos. El número secreto era: {numero_secreto}")
