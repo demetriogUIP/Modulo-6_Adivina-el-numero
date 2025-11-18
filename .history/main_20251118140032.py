@@ -9,7 +9,7 @@ def main():
         repuesta = input("\n¿Quieres jugar otra partida? (s/n): ").lower().strip()
 
         if repuesta != 's':
-            print("\n¡Gracias por jugar! Adios. 👋")
+            print("\n¡Gracias por jugar! Adiós. 👋")
             break
         print("\n" + "="* 40 + "\n")
 
